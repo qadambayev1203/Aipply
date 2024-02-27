@@ -26,19 +26,20 @@ namespace Repository.AllSqlRepository.AppealsSqlRepository
                 var appeals = new List<Appeal>();
                 if (queryNum == 0 && pageNum != 0)
                 {
-                    appeals = _context.appeals_20ai24ppy.Include(x=>x.status_)                     
-                        .Skip(10 * (pageNum - 1)).Take(10).ToList();
+                    appeals = _context.appeals_20ai24ppy.Include(x => x.status_)
+                        .Skip(10 * (pageNum - 1)).Take(10).OrderBy(x => x.status_id).ThenBy(y => y.fio)
+                        .ToList();
 
                 }
                 if (queryNum != 0)
                 {
                     if (queryNum > 200) { queryNum = 200; }
-                    appeals = _context.appeals_20ai24ppy.Include(x => x.status_).Take(queryNum).ToList();
+                    appeals = _context.appeals_20ai24ppy.Include(x => x.status_).Take(queryNum).OrderBy(x => x.status_id).ThenBy(y => y.fio).ToList();
 
                 }
                 else
                 {
-                    appeals = _context.appeals_20ai24ppy.Include(x => x.status_).Take(200).ToList();
+                    appeals = _context.appeals_20ai24ppy.Include(x => x.status_).Take(200).OrderBy(x => x.status_id).ThenBy(y => y.fio).ToList();
 
                 }
                 return appeals;
