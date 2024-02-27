@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AipplyWebAPI", "AippyWebAPI\AipplyWebAPI.csproj", "{231CEB3E-B183-4EEE-BDA8-1C66B2C9E3CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AipplyWebAPI", "AippyWebAPI\AipplyWebAPI.csproj", "{231CEB3E-B183-4EEE-BDA8-1C66B2C9E3CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{084947AC-94B0-4BE6-9FB7-FC7E0A8EC45D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{084947AC-94B0-4BE6-9FB7-FC7E0A8EC45D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{4AD69AC5-8B9B-4AA5-AF6B-CD511A123B71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{4AD69AC5-8B9B-4AA5-AF6B-CD511A123B71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{BBCDFBF5-ECD0-45FE-BCD9-91D59EDFE77F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Contracts.csproj", "{BBCDFBF5-ECD0-45FE-BCD9-91D59EDFE77F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{4C880385-E60E-4755-A6BA-9371508C0903}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{BBCDFBF5-ECD0-45FE-BCD9-91D59EDFE77F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBCDFBF5-ECD0-45FE-BCD9-91D59EDFE77F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBCDFBF5-ECD0-45FE-BCD9-91D59EDFE77F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C880385-E60E-4755-A6BA-9371508C0903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C880385-E60E-4755-A6BA-9371508C0903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C880385-E60E-4755-A6BA-9371508C0903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C880385-E60E-4755-A6BA-9371508C0903}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
