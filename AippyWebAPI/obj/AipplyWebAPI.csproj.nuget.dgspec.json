@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\AipplySiteSolution\\AippyWebAPI\\AipplyWebAPI.csproj": {}
+    "D:\\Aipply\\AippyWebAPI\\AipplyWebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\AipplySiteSolution\\AippyWebAPI\\AipplyWebAPI.csproj": {
+    "D:\\Aipply\\AippyWebAPI\\AipplyWebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\AipplySiteSolution\\AippyWebAPI\\AipplyWebAPI.csproj",
+        "projectUniqueName": "D:\\Aipply\\AippyWebAPI\\AipplyWebAPI.csproj",
         "projectName": "AipplyWebAPI",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\AipplySiteSolution\\AippyWebAPI\\AipplyWebAPI.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\AipplySiteSolution\\AippyWebAPI\\obj\\",
+        "projectPath": "D:\\Aipply\\AippyWebAPI\\AipplyWebAPI.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Aipply\\AippyWebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -35,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\AipplySiteSolution\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\AipplySiteSolution\\Repository\\Repository.csproj"
+              "D:\\Aipply\\Repository\\Repository.csproj": {
+                "projectPath": "D:\\Aipply\\Repository\\Repository.csproj"
               }
             }
           }
@@ -93,24 +91,22 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\AipplySiteSolution\\Contracts\\Contracts.csproj": {
+    "D:\\Aipply\\Contracts\\Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\AipplySiteSolution\\Contracts\\Contracts.csproj",
+        "projectUniqueName": "D:\\Aipply\\Contracts\\Contracts.csproj",
         "projectName": "Contracts",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\AipplySiteSolution\\Contracts\\Contracts.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\AipplySiteSolution\\Contracts\\obj\\",
+        "projectPath": "D:\\Aipply\\Contracts\\Contracts.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Aipply\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -124,8 +120,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\AipplySiteSolution\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\AipplySiteSolution\\Entities\\Entities.csproj"
+              "D:\\Aipply\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\Aipply\\Entities\\Entities.csproj"
               }
             }
           }
@@ -159,24 +155,22 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\AipplySiteSolution\\Entities\\Entities.csproj": {
+    "D:\\Aipply\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\AipplySiteSolution\\Entities\\Entities.csproj",
+        "projectUniqueName": "D:\\Aipply\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\AipplySiteSolution\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\AipplySiteSolution\\Entities\\obj\\",
+        "projectPath": "D:\\Aipply\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Aipply\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -245,24 +239,22 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\AipplySiteSolution\\Repository\\Repository.csproj": {
+    "D:\\Aipply\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\AipplySiteSolution\\Repository\\Repository.csproj",
+        "projectUniqueName": "D:\\Aipply\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\AipplySiteSolution\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\AipplySiteSolution\\Repository\\obj\\",
+        "projectPath": "D:\\Aipply\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Aipply\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -276,8 +268,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\AipplySiteSolution\\Contracts\\Contracts.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\AipplySiteSolution\\Contracts\\Contracts.csproj"
+              "D:\\Aipply\\Contracts\\Contracts.csproj": {
+                "projectPath": "D:\\Aipply\\Contracts\\Contracts.csproj"
               }
             }
           }

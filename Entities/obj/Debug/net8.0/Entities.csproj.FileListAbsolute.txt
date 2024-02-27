@@ -1,0 +1,15 @@
+D:\Aipply\Entities\bin\Debug\net8.0\Entities.deps.json
+D:\Aipply\Entities\bin\Debug\net8.0\Entities.runtimeconfig.json
+D:\Aipply\Entities\bin\Debug\net8.0\Entities.dll
+D:\Aipply\Entities\bin\Debug\net8.0\Entities.pdb
+D:\Aipply\Entities\obj\Debug\net8.0\Entities.csproj.AssemblyReference.cache
+D:\Aipply\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Aipply\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+D:\Aipply\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+D:\Aipply\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+D:\Aipply\Entities\obj\Debug\net8.0\Entities.sourcelink.json
+D:\Aipply\Entities\obj\Debug\net8.0\Entities.dll
+D:\Aipply\Entities\obj\Debug\net8.0\refint\Entities.dll
+D:\Aipply\Entities\obj\Debug\net8.0\Entities.pdb
+D:\Aipply\Entities\obj\Debug\net8.0\Entities.genruntimeconfig.cache
+D:\Aipply\Entities\obj\Debug\net8.0\ref\Entities.dll

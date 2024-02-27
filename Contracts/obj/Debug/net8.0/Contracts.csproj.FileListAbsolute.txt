@@ -1,0 +1,16 @@
+D:\Aipply\Contracts\bin\Debug\net8.0\Contracts.deps.json
+D:\Aipply\Contracts\bin\Debug\net8.0\Contracts.dll
+D:\Aipply\Contracts\bin\Debug\net8.0\Contracts.pdb
+D:\Aipply\Contracts\bin\Debug\net8.0\Entities.dll
+D:\Aipply\Contracts\bin\Debug\net8.0\Entities.pdb
+D:\Aipply\Contracts\obj\Debug\net8.0\Contracts.csproj.AssemblyReference.cache
+D:\Aipply\Contracts\obj\Debug\net8.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\Aipply\Contracts\obj\Debug\net8.0\Contracts.AssemblyInfoInputs.cache
+D:\Aipply\Contracts\obj\Debug\net8.0\Contracts.AssemblyInfo.cs
+D:\Aipply\Contracts\obj\Debug\net8.0\Contracts.csproj.CoreCompileInputs.cache
+D:\Aipply\Contracts\obj\Debug\net8.0\Contracts.sourcelink.json
+D:\Aipply\Contracts\obj\Debug\net8.0\Contracts.csproj.CopyComplete
+D:\Aipply\Contracts\obj\Debug\net8.0\Contracts.dll
+D:\Aipply\Contracts\obj\Debug\net8.0\refint\Contracts.dll
+D:\Aipply\Contracts\obj\Debug\net8.0\Contracts.pdb
+D:\Aipply\Contracts\obj\Debug\net8.0\ref\Contracts.dll

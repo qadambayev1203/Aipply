@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AipplyWebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+038acbd116799f6192e439b19a5ead5e5fe75f7f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+725b6f833a46f7129ff8505bf82a5f4d3a637f16")]
 [assembly: System.Reflection.AssemblyProductAttribute("AipplyWebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AipplyWebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
