@@ -77,6 +77,21 @@ namespace Entities.Migrations
                         {
                             id = 2,
                             status = "readed"
+                        },
+                        new
+                        {
+                            id = 3,
+                            status = "talked"
+                        },
+                        new
+                        {
+                            id = 4,
+                            status = "rejected"
+                        },
+                        new
+                        {
+                            id = 5,
+                            status = "consent"
                         });
                 });
 

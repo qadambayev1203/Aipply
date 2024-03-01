@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Entities.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20240227171353_FirstMigration")]
+    [Migration("20240301174919_FirstMigration")]
     partial class FirstMigration
     {
         /// <inheritdoc />
@@ -80,6 +80,21 @@ namespace Entities.Migrations
                         {
                             id = 2,
                             status = "readed"
+                        },
+                        new
+                        {
+                            id = 3,
+                            status = "talked"
+                        },
+                        new
+                        {
+                            id = 4,
+                            status = "rejected"
+                        },
+                        new
+                        {
+                            id = 5,
+                            status = "consent"
                         });
                 });
 

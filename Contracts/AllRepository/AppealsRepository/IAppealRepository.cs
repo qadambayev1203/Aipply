@@ -14,6 +14,6 @@ namespace Contracts.AllRepository.AppealsRepository
         public Appeal GetAppealById(int id);
         public bool CreateAppeal(Appeal appeal);
         //public bool UpdateAppeal(int id, Appeal appeal);
-        public bool StatusReadedAppeal(int id);
+        public bool StatusReadedAppeal(int id, int status_id);
     }
 }

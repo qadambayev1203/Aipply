@@ -89,7 +89,10 @@ namespace Entities.Migrations
                 values: new object[,]
                 {
                     { 1, "active" },
-                    { 2, "readed" }
+                    { 2, "readed" },
+                    { 3, "talked" },
+                    { 4, "rejected" },
+                    { 5, "consent" }
                 });
 
             migrationBuilder.InsertData(

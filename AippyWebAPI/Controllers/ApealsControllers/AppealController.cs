@@ -72,9 +72,9 @@ namespace AippyWebAPI.Controllers.ApealsControllers
 
         [Authorize(Roles = "admin")]
         [HttpPut("statusreadedappeal/{id}")]
-        public IActionResult StatusReadedAppeal(int id)
+        public IActionResult StatusReadedAppeal(int id, int status_id)
         {
-            bool check = _repository.StatusReadedAppeal(id);
+            bool check = _repository.StatusReadedAppeal(id, status_id);
             if (!check)
             {
                 return BadRequest();

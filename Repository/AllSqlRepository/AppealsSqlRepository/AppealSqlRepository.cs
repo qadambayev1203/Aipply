@@ -71,7 +71,7 @@ namespace Repository.AllSqlRepository.AppealsSqlRepository
             }
         }
 
-        public bool StatusReadedAppeal(int id)
+        public bool StatusReadedAppeal(int id, int status_id)
         {
             try
             {
@@ -80,7 +80,12 @@ namespace Repository.AllSqlRepository.AppealsSqlRepository
                 {
                     return false;
                 }
-                appeal.status_id = 2;
+                var status = _context.statuses_20ai24ppy.FirstOrDefault(x => x.id.Equals(status_id));
+                if (status == null)
+                {
+                    return false;
+                }
+                appeal.status_id = status.id;
                 _context.appeals_20ai24ppy.Update(appeal);
                 _context.SaveChanges();
 
