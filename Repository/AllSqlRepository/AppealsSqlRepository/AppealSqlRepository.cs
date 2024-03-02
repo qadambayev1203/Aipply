@@ -31,7 +31,7 @@ namespace Repository.AllSqlRepository.AppealsSqlRepository
                         .ToList();
 
                 }
-                if (queryNum != 0)
+                else if (queryNum != 0)
                 {
                     if (queryNum > 200) { queryNum = 200; }
                     appeals = _context.appeals_20ai24ppy.Include(x => x.status_).Take(queryNum).OrderBy(x => x.status_id).ThenBy(y => y.fio).ToList();
