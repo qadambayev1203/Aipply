@@ -43,12 +43,14 @@ namespace AippyWebAPI.Controllers.ApealsControllers
         [Authorize(Roles = "admin")]
 
         [HttpGet("getallappeal")]
-        public IActionResult GetAllAppeal(int pageNum, int status)
+        public IActionResult GetAllAppeal(int queryNum,int pageNum, int status)
         {
             pageNum = Math.Abs(pageNum);
-            IEnumerable<Appeal> appeals1 = _repository.AllAppeal(pageNum, status);
+            queryNum = Math.Abs(queryNum);
+            if (status < 0 || status > 4) { return NotFound(); }
+            IEnumerable<Appeal> appeals1 = _repository.AllAppeal(queryNum,pageNum, status);
             var appeals = _mapper.Map<IEnumerable<AppealReadedDTO>>(appeals1);
-            if (appeals == null) { return NotFound(); }
+            if (appeals == null || appeals.Count()==0) { return NotFound(); }
 
             return Ok(appeals);
         }

@@ -19,37 +19,49 @@ namespace Repository.AllSqlRepository.AppealsSqlRepository
             _context = repositoryContext;
         }
 
-        public IEnumerable<Appeal> AllAppeal(int pageNum, int status_id)
+        public IEnumerable<Appeal> AllAppeal(int queryNum, int pageNum, int status_id)
         {
             try
             {
                 var appeals = new List<Appeal>();
-                if (pageNum != 0 && status_id != 0)
+                if (queryNum != 0 && status_id != 0)
                 {
-                    appeals = _context.appeals_20ai24ppy.Include(x => x.status_)
-                        .Skip(10 * (pageNum - 1)).Take(10).OrderBy(x => x.status_id).ThenBy(y => y.fio).Where(x => x.status_id == status_id)
-                        .ToList();
-
+                    if (queryNum > 200) { queryNum = 200; }
+                    appeals = _context.appeals_20ai24ppy.Where(z => z.status_id == status_id).OrderBy(x => x.id).Include(x => x.status_).Take(queryNum).ToList();
                 }
-                else if (pageNum != 0 && status_id == 0)
+                else if (queryNum == 0 && pageNum != 0 && status_id != 0)
                 {
-                    appeals = _context.appeals_20ai24ppy.Include(x => x.status_)
-                        .Skip(10 * (pageNum - 1)).Take(10).OrderBy(x => x.status_id).ThenBy(y => y.fio)
+                    appeals = _context.appeals_20ai24ppy.Where(z => z.status_id == status_id).OrderBy(x => x.id).Include(x => x.status_)
+                        .Skip(10 * (pageNum - 1)).Take(10)
                         .ToList();
                 }
-                else if (pageNum == 0 && status_id != 0)
+                else if (queryNum != 0 && status_id == 0)
                 {
-                    appeals = _context.appeals_20ai24ppy.Include(x => x.status_).Take(200).OrderBy(x => x.status_id).ThenBy(y => y.fio).Where(z=>z.status_id==status_id).ToList();
+                    if (queryNum > 200) { queryNum = 200; }
+                    appeals = _context.appeals_20ai24ppy.OrderBy(x => x.id).Include(x => x.status_).Take(queryNum).ToList();
+                }
+                else if (queryNum == 0 && pageNum != 0 && status_id == 0)
+                {
+                    appeals = _context.appeals_20ai24ppy.OrderBy(x => x.id).Include(x => x.status_)
+                        .Skip(10 * (pageNum - 1)).Take(10)
+                        .ToList();
+                }
+                else if (queryNum == 0 && pageNum == 0 && status_id != 0)
+                {
+                    appeals = _context.appeals_20ai24ppy.Where(z => z.status_id == status_id).OrderBy(x => x.id).Include(x => x.status_).ToList();
                 }
                 else
                 {
-                    appeals = _context.appeals_20ai24ppy.Include(x => x.status_).Take(200).OrderBy(x => x.status_id).ThenBy(y => y.fio).ToList();
+                    appeals = _context.appeals_20ai24ppy.OrderBy(x => x.id).Include(x => x.status_).ToList();
                 }
+
+
                 return appeals;
             }
             catch
             {
-                return null;
+                List<Appeal> appealNull = new List<Appeal>();
+                return appealNull;
             }
         }
 
