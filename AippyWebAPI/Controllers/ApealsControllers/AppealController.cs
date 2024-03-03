@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Contracts.AllRepository.AppealsRepository;
+using Entities.DTO.AppealCountDTOS;
 using Entities.DTO.AppealsDTOS;
 using Entities.Model.AppealsModel;
 using Microsoft.AspNetCore.Authorization;
@@ -14,6 +15,8 @@ namespace AippyWebAPI.Controllers.ApealsControllers
     {
         private readonly IAppealRepository _repository;
         private readonly IMapper _mapper;
+        private int _count=0;
+        private AppealCountDTO appealCount;
         public AppealController(IAppealRepository repository, IMapper mapper)
         {
             _repository = repository;
@@ -40,11 +43,10 @@ namespace AippyWebAPI.Controllers.ApealsControllers
         [Authorize(Roles = "admin")]
 
         [HttpGet("getallappeal")]
-        public IActionResult GetAllAppeal(int queryNum, int pageNum)
+        public IActionResult GetAllAppeal(int pageNum, int status)
         {
-            queryNum = Math.Abs(queryNum);
             pageNum = Math.Abs(pageNum);
-            IEnumerable<Appeal> appeals1 = _repository.AllAppeal(queryNum, pageNum);
+            IEnumerable<Appeal> appeals1 = _repository.AllAppeal(pageNum, status);
             var appeals = _mapper.Map<IEnumerable<AppealReadedDTO>>(appeals1);
             if (appeals == null) { return NotFound(); }
 
@@ -63,8 +65,29 @@ namespace AippyWebAPI.Controllers.ApealsControllers
             Appeal appeal1 = _repository.GetAppealById(id);
             var appeal = _mapper.Map<AppealReadedDTO>(appeal1);
             if (appeal == null) { return NotFound(); }
-
             return Ok(appeal);
+        }
+
+        [Authorize(Roles = "admin")]
+        [HttpGet("getcountbystatus/{status_id}")]
+        public IActionResult GetCountByStatus(int status_id)
+        {
+            try
+            {
+                status_id = Math.Abs(status_id);
+                _count = _repository.AppealCount(status_id);
+                if (_count == 0) { return NotFound(); }
+                appealCount = new AppealCountDTO
+                {
+                    status_code = 200,
+                    count = _count
+                };
+                return Ok(appealCount);
+            }
+            catch 
+            {
+                return BadRequest();
+            }
         }
 
 

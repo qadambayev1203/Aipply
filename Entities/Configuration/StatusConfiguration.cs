@@ -16,10 +16,9 @@ namespace Entities.Configuration
         {
             builder.HasData(
                 new Status { id = 1, status = "active" },
-                new Status { id = 2, status = "readed" },
-                new Status { id = 3, status = "talked" },
-                new Status { id = 4, status = "rejected" },
-                new Status { id = 5, status = "consent" }
+                new Status { id = 2, status = "talked" },
+                new Status { id = 3, status = "rejected" },
+                new Status { id = 4, status = "consent" }
                 );
 
         }

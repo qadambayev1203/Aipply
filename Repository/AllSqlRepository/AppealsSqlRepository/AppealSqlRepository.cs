@@ -19,28 +19,31 @@ namespace Repository.AllSqlRepository.AppealsSqlRepository
             _context = repositoryContext;
         }
 
-        public IEnumerable<Appeal> AllAppeal(int queryNum, int pageNum)
+        public IEnumerable<Appeal> AllAppeal(int pageNum, int status_id)
         {
             try
             {
                 var appeals = new List<Appeal>();
-                if (queryNum == 0 && pageNum != 0)
+                if (pageNum != 0 && status_id != 0)
+                {
+                    appeals = _context.appeals_20ai24ppy.Include(x => x.status_)
+                        .Skip(10 * (pageNum - 1)).Take(10).OrderBy(x => x.status_id).ThenBy(y => y.fio).Where(x => x.status_id == status_id)
+                        .ToList();
+
+                }
+                else if (pageNum != 0 && status_id == 0)
                 {
                     appeals = _context.appeals_20ai24ppy.Include(x => x.status_)
                         .Skip(10 * (pageNum - 1)).Take(10).OrderBy(x => x.status_id).ThenBy(y => y.fio)
                         .ToList();
-
                 }
-                else if (queryNum != 0)
+                else if (pageNum == 0 && status_id != 0)
                 {
-                    if (queryNum > 200) { queryNum = 200; }
-                    appeals = _context.appeals_20ai24ppy.Include(x => x.status_).Take(queryNum).OrderBy(x => x.status_id).ThenBy(y => y.fio).ToList();
-
+                    appeals = _context.appeals_20ai24ppy.Include(x => x.status_).Take(200).OrderBy(x => x.status_id).ThenBy(y => y.fio).Where(z=>z.status_id==status_id).ToList();
                 }
                 else
                 {
                     appeals = _context.appeals_20ai24ppy.Include(x => x.status_).Take(200).OrderBy(x => x.status_id).ThenBy(y => y.fio).ToList();
-
                 }
                 return appeals;
             }
@@ -109,6 +112,33 @@ namespace Repository.AllSqlRepository.AppealsSqlRepository
             {
                 return null;
             }
+        }
+        public int AppealCount(int status_id)
+        {
+            try
+            {
+                int count = 0;
+                if (status_id == 0)
+                {
+                    count = _context.appeals_20ai24ppy.Count();
+                    return (int)count;
+                }
+                else if (status_id >= 1 && status_id <= 4)
+                {
+                    count = _context.appeals_20ai24ppy.Where(x => x.status_id == status_id).Count();
+                    return (int)count;
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+            catch
+            {
+                return 0;
+            }
+
+
         }
 
         //public bool UpdateAppeal(int id, Appeal appeal)
