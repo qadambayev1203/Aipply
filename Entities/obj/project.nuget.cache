@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2Aj0/mz6PRBtcq7fahzbttKX+4iJ8XT11vzJHiTtwGJyrYBJbIEN9NvFOHiNvYL+cnY2G4BkNHojydFk+A+vwA==",
+  "dgSpecHash": "JpFuJrJhtScxRi+Gn+YNh4iNPVCnk6bQwQrdfa6U/8ehDX2uLM8lGD1ITbmYNqt71ldOlkenZQXR6ooyKGtVXQ==",
   "success": true,
-  "projectFilePath": "D:\\Aipply\\Entities\\Entities.csproj",
+  "projectFilePath": "D:\\All Project\\Aipply\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
@@ -49,5 +49,16 @@
     "C:\\Users\\user\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Npgsql' 8.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-x9vc-6hfv-hg8c",
+      "libraryId": "Npgsql",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

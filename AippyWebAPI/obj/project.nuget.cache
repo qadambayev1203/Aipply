@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IBa7XN7tH4XqK4rEWFjH1J5lgcwWgMMsLiIR5BysPXvWMjvCaORAEPthQEfQiqxwh4kHTYFFCTu19SyioUvspw==",
+  "dgSpecHash": "ohNnIv00Ds8v4nCcEWVB/UiHjfeP9YDdAm7RnfW48DxqhhggnoOhqX6Qm5rJMaqq6t4GNo1w4shShLIIi0K/QQ==",
   "success": true,
-  "projectFilePath": "D:\\Aipply\\AippyWebAPI\\AipplyWebAPI.csproj",
+  "projectFilePath": "D:\\All Project\\Aipply\\AippyWebAPI\\AipplyWebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
@@ -64,5 +64,16 @@
     "C:\\Users\\user\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'RestSharp' 110.2.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-4rr6-2v9v-wcpc",
+      "libraryId": "RestSharp",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

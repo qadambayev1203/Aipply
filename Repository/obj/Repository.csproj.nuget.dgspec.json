@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Aipply\\Repository\\Repository.csproj": {}
+    "D:\\All Project\\Aipply\\Repository\\Repository.csproj": {}
   },
   "projects": {
-    "D:\\Aipply\\Contracts\\Contracts.csproj": {
+    "D:\\All Project\\Aipply\\Contracts\\Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Aipply\\Contracts\\Contracts.csproj",
+        "projectUniqueName": "D:\\All Project\\Aipply\\Contracts\\Contracts.csproj",
         "projectName": "Contracts",
-        "projectPath": "D:\\Aipply\\Contracts\\Contracts.csproj",
+        "projectPath": "D:\\All Project\\Aipply\\Contracts\\Contracts.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Aipply\\Contracts\\obj\\",
+        "outputPath": "D:\\All Project\\Aipply\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Aipply\\Entities\\Entities.csproj": {
-                "projectPath": "D:\\Aipply\\Entities\\Entities.csproj"
+              "D:\\All Project\\Aipply\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\All Project\\Aipply\\Entities\\Entities.csproj"
               }
             }
           }
@@ -68,14 +68,14 @@
         }
       }
     },
-    "D:\\Aipply\\Entities\\Entities.csproj": {
+    "D:\\All Project\\Aipply\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Aipply\\Entities\\Entities.csproj",
+        "projectUniqueName": "D:\\All Project\\Aipply\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "D:\\Aipply\\Entities\\Entities.csproj",
+        "projectPath": "D:\\All Project\\Aipply\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Aipply\\Entities\\obj\\",
+        "outputPath": "D:\\All Project\\Aipply\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -152,14 +152,14 @@
         }
       }
     },
-    "D:\\Aipply\\Repository\\Repository.csproj": {
+    "D:\\All Project\\Aipply\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Aipply\\Repository\\Repository.csproj",
+        "projectUniqueName": "D:\\All Project\\Aipply\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "D:\\Aipply\\Repository\\Repository.csproj",
+        "projectPath": "D:\\All Project\\Aipply\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Aipply\\Repository\\obj\\",
+        "outputPath": "D:\\All Project\\Aipply\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -181,8 +181,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Aipply\\Contracts\\Contracts.csproj": {
-                "projectPath": "D:\\Aipply\\Contracts\\Contracts.csproj"
+              "D:\\All Project\\Aipply\\Contracts\\Contracts.csproj": {
+                "projectPath": "D:\\All Project\\Aipply\\Contracts\\Contracts.csproj"
               }
             }
           }
